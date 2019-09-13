@@ -7,6 +7,11 @@
   // }
 
   .intro {
+    .earth{
+      @media @mobile{
+        width:100%;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -22,6 +27,20 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @mobile {
+      display:flex;
+      flex-direction: column-reverse;
+      align-content: center;
+      .blast{
+        width:100%-8px;
+      }
+      .sky{
+        display:none;
+      }
+      .launch{
+        display:none;
+      }
+    }
 
     img {
       width: 28%;
@@ -49,6 +68,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    flex-direction: column-reverse;
     
 
     .walk-text {
@@ -98,6 +118,9 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile{
+        width:100%;
+      }
       
       img {
         width: 100%;
