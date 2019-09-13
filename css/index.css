@@ -180,6 +180,7 @@ p {
   justify-content: space-evenly;
   font-size: 1.6rem;
   margin-top: 10px;
+  padding-bottom: 10px;
 }
 @media (max-width: 500px) {
   .topSection nav {
@@ -262,7 +263,6 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
-  flex-direction: column-reverse;
 }
 .home .walk .walk-text {
   width: 50%;
