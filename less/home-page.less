@@ -2,9 +2,9 @@
 
 .home {
 
-  h1{
-    font-size: 2.0rem;
-  }
+  // h1{
+  //   font-size: 2.0rem;
+  // }
 
   .intro {
 
@@ -62,8 +62,16 @@
       }
 
       .btn {
+        button{
+        .button(@bgColor, @wild-sand);
+        
+        }
       }
-    }
+  }
+  button:hover {
+    color: #9555af;
+    border-color: currentColor;
+    background-color: white;
 
     .walk-img {
       width: 46%;

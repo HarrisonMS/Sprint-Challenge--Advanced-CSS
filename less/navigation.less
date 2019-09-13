@@ -1,5 +1,28 @@
 // Navigation code here
 .topSection{
-    .displayFlex(center, center)
-
+    .displayFlex(center, center);
+    flex-direction: column;
+    width: 85%;
+    background-color: @wild-sand;
+    border: 1px solid red;
+    margin: 0 auto;
+    nav{
+        display:flex;
+        border: 1px solid red;
+        width:75%;
+        justify-content: space-evenly;
+        font-size:1.6rem;
+        margin-top: 10px;
+        .links{
+            
+            a {
+                text-decoration: none;
+                color:black;
+                padding-right:50px;
+            }
+        }
+    }
+}   
+h1{
+    font-size: 4.0rem;
 }
