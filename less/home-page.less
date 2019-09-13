@@ -49,9 +49,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
 
     .walk-text {
       width: 50%;
+      @media @mobile{
+        display:flex;
+        flex-flow: column wrap;
+        width:100%;
+
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -64,14 +71,29 @@
       .btn {
         button{
         .button(@bgColor, @wild-sand);
+        @media @mobile{
+          width:100%;
+        }
+        }
         
         }
       }
   }
-  button:hover {
-    color: #9555af;
-    border-color: currentColor;
-    background-color: white;
+}
+.walk{
+  .walk-text{
+    .btn{
+      button:hover {
+        color: @bgColor;
+        border-color: currentColor;
+        background-color: @wild-sand;
+      }
+
+    }
+  }
+}
+  
+    
 
     .walk-img {
       width: 46%;
@@ -83,5 +105,4 @@
         border-radius: 10px;
       }
     }
-  }
-}// home
+// home
